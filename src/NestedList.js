@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { StyleSheet, View, YellowBox } from "react-native";
+import { StyleSheet, View, LogBox } from "react-native";
 import NestedListView from "./NestedListView";
 
-YellowBox.ignoreWarnings(["Require cycle:"]);
+//YellowBox.ignoreWarnings(["Require cycle:"]);
+LogBox.ignoreAllLogs();
 
 export default function NestedList({
   listItems,
